@@ -224,7 +224,7 @@ World::World(Map terrain,vector<string> AI)
 		Empire *e=new Empire(this,AI.at(i),&Size,terrain.SpawnPoint.at(i),terrain.Population);
 	
 		//load dynamic library
-		string dir = "./AIs/"+AI.at(i);
+		string dir = "./intelligences/"+AI.at(i);
 		e->Handle = dlopen(dir.c_str(), RTLD_LAZY);			//open AI's shared library
 
 		if (!e->Handle)	//dlopen failed
