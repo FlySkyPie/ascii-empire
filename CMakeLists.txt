@@ -31,6 +31,4 @@ set_target_properties(simulator PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${SIMULATOR_
 
 #example AI
 add_subdirectory(${AI_SOURCE_DIR}/Alpha) 
-#add_executable(Alpha_AI.so.0.1 ${AI_ALPHA_SRCS})
-
-#add_executable(Beta_AI.so.0.1 ${AI_BETA_SRCS})
+add_subdirectory(${AI_SOURCE_DIR}/Beta) 
